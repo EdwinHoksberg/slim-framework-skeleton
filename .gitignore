@@ -1,0 +1,12 @@
+.idea/
+vendor/
+node_modules/
+.env
+
+storage/twig/*
+storage/logs/*
+
+public/css/*
+public/js/*
+
+!.gitkeep

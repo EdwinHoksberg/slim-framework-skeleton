@@ -1,0 +1,41 @@
+DEBUG - 2015-11-25T11:56:15+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:18+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:23+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:24+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:25+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:28+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:38+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:38+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:39+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T16:09:39+01:00 - Request path: / - Response status: 200
+ERROR - 2015-11-25T18:08:49+01:00 - exception 'ErrorException' with message 'Argument 1 passed to SlimController\SlimController::__construct() must be an instance of Slim\Slim, none given, called in D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Route.php on line 171 and defined' in D:\Sites\slim-skeleton\vendor\slimcontroller\slimcontroller\src\SlimController\SlimController.php:72
+Stack trace:
+#0 D:\Sites\slim-skeleton\vendor\slimcontroller\slimcontroller\src\SlimController\SlimController.php(72): Slim\Slim::handleErrors(4096, 'Argument 1 pass...', 'D:\\Sites\\slim-s...', 72, Array)
+#1 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Route.php(171): SlimController\SlimController->__construct()
+#2 [internal function]: Slim\Route->Slim\{closure}()
+#3 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 D:\Sites\slim-skeleton\public\index.php(65): Slim\Slim->run()
+#10 {main}
+ERROR - 2015-11-25T18:08:50+01:00 - exception 'ErrorException' with message 'Argument 1 passed to SlimController\SlimController::__construct() must be an instance of Slim\Slim, none given, called in D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Route.php on line 171 and defined' in D:\Sites\slim-skeleton\vendor\slimcontroller\slimcontroller\src\SlimController\SlimController.php:72
+Stack trace:
+#0 D:\Sites\slim-skeleton\vendor\slimcontroller\slimcontroller\src\SlimController\SlimController.php(72): Slim\Slim::handleErrors(4096, 'Argument 1 pass...', 'D:\\Sites\\slim-s...', 72, Array)
+#1 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Route.php(171): SlimController\SlimController->__construct()
+#2 [internal function]: Slim\Route->Slim\{closure}()
+#3 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Route.php(468): call_user_func_array(Object(Closure), Array)
+#4 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Slim.php(1357): Slim\Route->dispatch()
+#5 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 D:\Sites\slim-skeleton\vendor\slim\slim\Slim\Slim.php(1302): Slim\Middleware\PrettyExceptions->call()
+#9 D:\Sites\slim-skeleton\public\index.php(65): Slim\Slim->run()
+#10 {main}
+DEBUG - 2015-11-25T18:08:58+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T18:09:00+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T21:36:18+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T21:40:40+01:00 - Request path: / - Response status: 200
+DEBUG - 2015-11-25T22:15:06+01:00 - Request path: / - Response status: 200
