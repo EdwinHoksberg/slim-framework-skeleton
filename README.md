@@ -1,4 +1,4 @@
-# Slim Framework skeleton
+# Slim Framework skeleton with Slim Framework 2.0
 
 This app includes:
 * A full MVC model 
