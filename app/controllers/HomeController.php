@@ -1,9 +1,8 @@
 <?php namespace app\controllers;
 
-class HomeController extends \SlimController\SlimController
+class HomeController
 {
     public function indexAction()
     {
-        $this->render('home/index');
     }
 }

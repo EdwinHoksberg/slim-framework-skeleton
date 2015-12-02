@@ -1,9 +1,5 @@
 <?php
 
-$app->addRoutes([
-    '/' => 'Home:index'
-]);
-
-$app->notFound(function () use ($app) {
-    $app->redirect('/');
+$app->get('/', function ($request, $response, $args) {
+    return $this->view->render($response, 'home/index.twig');
 });
