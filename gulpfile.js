@@ -40,13 +40,13 @@ gulp.task('js', function() {
     ];
 
     if (argv.production) {
-        return gulp.src(['resources/js/modules/**/*.js', 'resources/js/views/**/*.js'].concat(files))
+        return gulp.src(files.concat(['resources/js/modules/**/*.js', 'resources/js/views/**/*.js']))
             .pipe(concat('app.js'))
             .pipe(uglify())
             .pipe(gulp.dest('public/js'))
             .pipe(notify({message: '[PROD] Compiled JS!', onLast: true}));
     } else {
-        return gulp.src(['resources/js/modules/**/*.js', 'resources/js/views/**/*.js'].concat(files))
+        return gulp.src(files.concat(['resources/js/modules/**/*.js', 'resources/js/views/**/*.js']))
             .pipe(sourcemaps.init())
             .pipe(concat('app.js'))
             .pipe(sourcemaps.write('.'))
