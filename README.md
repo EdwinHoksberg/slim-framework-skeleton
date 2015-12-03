@@ -12,8 +12,7 @@ This app includes:
 * jQuery
 
 # Installation
-1. Download the [master branch](https://github.com/EdwinHoksberg/slim-framework-skeleton/archive/master.zip) of this project and unzip it in your project root.
-2. Run `composer install` to download all project dependencies.
+1. Run `composer create-project edwinhoksberg/slim-framework-skeleton` in the directory you want to install this app.
 3. Navigate to your project url and you should see a 'Hello World' message.
 
 To use CSS and JavaScript, run `npm install` for the build dependencies. 
