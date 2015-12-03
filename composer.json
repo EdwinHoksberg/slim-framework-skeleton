@@ -11,7 +11,7 @@
             "email": "info@edwinhoksberg.nl",
             "homepage": "https://github.com/EdwinHoksberg",
             "role": "Developer"
-        },
+        }
   ],
   "require": {
     "slim/slim": "~2.0",
