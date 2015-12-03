@@ -1,5 +1,5 @@
 {
-  "name": "slim-framework-skeleton",
+  "name": "edwinhoksberg/slim-framework-skeleton",
   "description": "A skeleton framework with built-in features, made with Slim Framework 2.0",
   "type": "project",
   "keywords": ["slim framework", "slim", "skeleton"],
