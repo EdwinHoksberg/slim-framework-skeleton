@@ -38,11 +38,9 @@ Model::$auto_prefix_models = '\\app\\models\\';
 if (getenv('APP_DEBUG') == 'true') {
     ORM::configure('logging', true);
 
-
     ORM::configure('logger', function ($log_string, $query_time) use ($app) {
-        $app->getLog()->getWriter()->write(
-            'Query [' . $log_string . '] time: [' . $query_time . ' seconds]',
-            \Slim\Log::DEBUG
+        $app->getLog()->debug(
+            'Query [' . $log_string . '] time: [' . $query_time . ' seconds]'
         );
     });
 }
