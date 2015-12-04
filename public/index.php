@@ -35,15 +35,6 @@ ORM::configure('username', getenv('DB_USERNAME'));
 ORM::configure('password', getenv('DB_PASSWORD'));
 
 Model::$auto_prefix_models = '\\app\\models\\';
-if (getenv('APP_DEBUG') == 'true') {
-    ORM::configure('logging', true);
-
-    ORM::configure('logger', function ($log_string, $query_time) use ($app) {
-        $app->getLog()->debug(
-            'Query [' . $log_string . '] time: [' . $query_time . ' seconds]'
-        );
-    });
-}
 
 // configure views
 $app->view()->parserOptions = [
@@ -60,6 +51,7 @@ if (getenv('APP_DEBUG') == 'true') {
     // configure logging
     $app->config('debug', true);
 
+    // configure request logging
     $app->hook('slim.after.router', function () use ($app) {
         $request = $app->request;
         $response = $app->response;
@@ -71,6 +63,15 @@ if (getenv('APP_DEBUG') == 'true') {
 
     // configure error reporting
     $app->add(new \Zeuxisoo\Whoops\Provider\Slim\WhoopsMiddleware);
+
+    // configure model logging
+    ORM::configure('logging', true);
+
+    ORM::configure('logger', function ($log_string, $query_time) use ($app) {
+        $app->getLog()->debug(
+            'Query [' . $log_string . '] time: [' . $query_time . ' seconds]'
+        );
+    });
 } else {
     $app->config('debug', false);
 }
