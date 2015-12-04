@@ -53,7 +53,8 @@ $app->view()->parserOptions = [
     'cache' => APP_PATH . '/storage/twig'
 ];
 $app->view()->parserExtensions = [
-    new \Slim\Views\TwigExtension()
+    new \Slim\Views\TwigExtension(),
+    new \src\twig\TwigExtension(),
 ];
 
 // environment depending settings
